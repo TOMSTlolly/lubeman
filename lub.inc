@@ -1,0 +1,2 @@
+//#define MAREK
+#define NATHAN
