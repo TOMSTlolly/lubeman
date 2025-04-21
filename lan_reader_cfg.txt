@@ -1,0 +1,7 @@
+_host=10.0.0.158
+_port=5000
+_user=D12345678
+_auto_user=2
+_save_data=1
+_save_folder=data
+

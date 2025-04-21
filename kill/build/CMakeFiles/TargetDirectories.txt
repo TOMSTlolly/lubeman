@@ -1,0 +1,3 @@
+/home/krata/lubeman/kill/build/CMakeFiles/testkill.dir
+/home/krata/lubeman/kill/build/CMakeFiles/edit_cache.dir
+/home/krata/lubeman/kill/build/CMakeFiles/rebuild_cache.dir
