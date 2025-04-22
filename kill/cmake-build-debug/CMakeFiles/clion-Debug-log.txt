@@ -1,5 +1,11 @@
-/snap/clion/332/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/332/bin/ninja/linux/x64/ninja -G Ninja -S /home/krata/lubeman/kill -B /home/krata/lubeman/kill/cmake-build-debug
+/snap/clion/338/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/338/bin/ninja/linux/x64/ninja -G Ninja -S /home/krata/lubeman/kill -B /home/krata/lubeman/kill/cmake-build-debug
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Home directory: /home/krata
--- Configuring done (0.0s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/krata/lubeman/kill/cmake-build-debug

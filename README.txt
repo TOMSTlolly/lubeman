@@ -6,6 +6,9 @@
 +) sudo udevadm control --reload-rules
 +) sudo udevadm trigger
 
+
++) sudo apt install libsqlite3-dev
+
 *********** vnutim x86 ubuntu knihovny BEZ behu ve virtualnim prostredi
 +) instaluj tzlocal
    sudo apt install python3-tzlocal
