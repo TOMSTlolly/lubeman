@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/testkill.dir/asmjs.c.o CMakeFiles/testkill.dir/tcpx.c.o CMakeFiles/testkill.dir/main.c.o -o /home/krata/lubeman/testkill   -L/home/krata/lubeman/kill/libs  -Wl,-rpath,/home/krata/lubeman/kill/libs /home/krata/lubeman/kill/libs/libiniparser.a 

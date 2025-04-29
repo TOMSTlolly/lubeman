@@ -67,8 +67,11 @@ case "$1" in
       cc=`expr $cc + 1`
       logger -p user.error -t TomstLanPesReader "Next starting script lubemand "$cc
       # $NAME > $DIR"/out.txt" 2>&1 &
-      $NAME
-      #/home/pi/krata/lubeman/simple > /home/pi/krata/lubeman/out.txt 2>&1 &
+      ## $NAME
+      echo "STARTUJU TOHLE"
+      echo $DIR"/testkill"
+      $DIR"/testkill"
+      #$DIR"/testkill" > $DIR"/out.txt" 2>&1 &
       rc=$?
     done
 
@@ -87,14 +90,14 @@ case "$1" in
             echo "Already stopped!"
             checkKill "pyguard.py"
             checkKill "simple"
-            checkKill "guard.sh"
+            checkKill "testkill"
             exit 1
     fi
     PID=`cat "$WORKDIR/$NAME.pid"`
     recursiveKill $PID
     rm -f "$WORKDIR/$NAME.pid"
     checkKill "simple"
-    checkKill "guard.sh"
+    checkKill "testkill"
     checkKill "pyguard.py"
     echo "stopped $NAME" && exit 0
 

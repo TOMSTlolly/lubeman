@@ -205,15 +205,18 @@ int main(int argc, char *argv[]) {
 		exit(0);
 	}
 	//strcpy(dir,"/home/krata/lubeman/");
-	strcat(cwd,"/");
-	strcpy(dir,cwd);
+	//strcat(cwd,"/");
+	//strcpy(dir,cwd);
+	strcpy(dir,"/home/pi/lubeman/");
 	strcpy(path,dir);
 	strcat(path,"lan_reader_cfg.txt");
 	//parse_ini_file("/home/krata/lubeman/lan_reader_cfg.txt");
 	parse_ini_file(path);
 	strcpy(ip,_host);
 	port = _port;
-
+        
+	ret = stop_process("simple");
+	ret = stop_process("pyguard.py");
 	while (true)
 	{
 		if (should_kill(ip,port) == true)

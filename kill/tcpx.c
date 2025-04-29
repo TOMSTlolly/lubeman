@@ -1,6 +1,9 @@
 //
 // Created by krata on 4/7/25.
 //
+#include <net/if.h>
+#include <linux/if.h>
+#include <sys/select.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,9 +18,9 @@
 #include <stdbool.h>
 
 //#define INTERFACE "enP4p65s0"
-#define INTERFACE "wlp0s20f3"
+//#define INTERFACE "wlp0s20f3"
 //#define INTERFACE "wlan0"
-//#define INTERFACE "eth0"
+#define INTERFACE "eth0"
 //
 // MAC address is stored in ifr_hwaddr.sa_data
 struct ifreq ifr;
@@ -165,7 +168,7 @@ int writetcp(char *ip, int port, char *cmd, char *par,char *response) {
         buffer[bytes_received] = '\0'; // Null-terminate the received data
         //printf("Server response: %s\n", buffer);
     }
-    //printf("%s  %s \n",line,buffer);
+    printf("%s  %s \n",line,buffer);
     close(sockfd);
     strcpy(response,buffer);
     return 0;
